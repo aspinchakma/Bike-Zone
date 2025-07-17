@@ -27,7 +27,11 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              navColor: "rgb(231, 111, 81);",
+              commoncolor: "rgb(231, 111, 81)",
+              first_banner: "rgba(231, 111, 81, 0.1)",
+              second_banner: "rgba(56, 178, 172, 0.1)",
+              third_banner: "rgba(250, 200, 88, 0.1)",
+              fourth_banner: "rgba(52, 73, 94, 0.1)",
             },
             fontFamily: {
               myFont: ["Poppins", "sans-serif"],
@@ -41,6 +45,12 @@
       };
     </script>
 
+    <!-- Css Style -->
+    <style>
+      body p {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
     <title>Bike Zone</title>
   </head>
   <body class="font-myFont">
@@ -91,7 +101,7 @@
           </div>
           <div>
             <a
-              class="bg-navColor text-white text-xl font-bold py-3 px-8 rounded-md inline-block"
+              class="bg-commoncolor cursor-pointer text-white text-base font-bold py-3 px-8 rounded-md inline-block hover:bg-commoncolor"
               >Button</a
             >
           </div>
@@ -99,6 +109,141 @@
       </nav>
 
       <!-- Banner section start -->
+      <div class="carousel w-full mt-10 my-10">
+        <!-- Slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full bg-first_banner">
+          <div
+            class="banner_main_content p-6 lg:p-24 grid grid-cols-1 lg:grid-cols-2 gap-24"
+          >
+            <!-- Banner left -->
+            <div class="banner_left lg:order-1">
+              <img src="images/slider/bike1.png" alt="" />
+            </div>
+
+            <!-- Banner Right -->
+            <div class="banner_right">
+              <h2 class="lg:text-6xl text-3xl font-bold">
+                Ride-on R15 V4 with Smile
+              </h2>
+              <p class="text-black opacity-80 my-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a
+                class="inline-block py-4 px-6 bg-commoncolor font-bold text-white rounded-md hover:bg-transparent hover:text-commoncolor hover:border-2 hover:border-commoncolor"
+                href=""
+                >Purchase</a
+              >
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full bg-second_banner">
+          <div
+            class="banner_main_content p-6 lg:p-24 grid grid-cols-1 lg:grid-cols-2 gap-24"
+          >
+            <!-- Banner left -->
+            <div class="banner_left lg:order-1">
+              <img src="images/slider/bike2.png" alt="" />
+            </div>
+
+            <!-- Banner Right -->
+            <div class="banner_right">
+              <h2 class="lg:text-6xl text-3xl font-bold">
+                Ride-on R15 V4 with Smile
+              </h2>
+              <p class="text-black opacity-80 my-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a
+                class="inline-block py-4 px-6 bg-commoncolor font-bold text-white rounded-md hover:bg-transparent hover:text-commoncolor hover:border-2 hover:border-commoncolor"
+                href=""
+                >Purchase</a
+              >
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full bg-third_banner">
+          <div
+            class="banner_main_content p-6 lg:p-24 grid grid-cols-1 lg:grid-cols-2 gap-24"
+          >
+            <!-- Banner left -->
+            <div class="banner_left lg:order-1">
+              <img src="images/slider/bike1.png" alt="" />
+            </div>
+
+            <!-- Banner Right -->
+            <div class="banner_right">
+              <h2 class="lg:text-6xl text-3xl font-bold">
+                Ride-on R15 V4 with Smile
+              </h2>
+              <p class="text-black opacity-80 my-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a
+                class="inline-block py-4 px-6 bg-commoncolor font-bold text-white rounded-md hover:bg-transparent hover:text-commoncolor hover:border-2 hover:border-commoncolor"
+                href=""
+                >Purchase</a
+              >
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full bg-fourth_banner">
+          <div
+            class="banner_main_content p-6 lg:p-24 grid grid-cols-1 lg:grid-cols-2 gap-24"
+          >
+            <!-- Banner left -->
+            <div class="banner_left lg:order-1">
+              <img src="images/slider/bike4.png" alt="" />
+            </div>
+
+            <!-- Banner Right -->
+            <div class="banner_right">
+              <h2 class="lg:text-6xl text-3xl font-bold">
+                Ride-on R15 V4 with Smile
+              </h2>
+              <p class="text-black opacity-80 my-6">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a
+                class="inline-block py-4 px-6 bg-commoncolor font-bold text-white rounded-md hover:bg-transparent hover:text-commoncolor hover:border-2 hover:border-commoncolor"
+                href=""
+                >Purchase</a
+              >
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
