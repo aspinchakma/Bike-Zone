@@ -27,9 +27,14 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              navColor: "rgb(231, 111, 81);",
             },
             fontFamily: {
               myFont: ["Poppins", "sans-serif"],
+            },
+            width: {
+              laptopWidth: "80%",
+              mobileWidth: "95%",
             },
           },
         },
@@ -38,5 +43,62 @@
 
     <title>Bike Zone</title>
   </head>
-  <body class="font-myFont"></body>
+  <body class="font-myFont">
+    <!-- Header section start -->
+    <header class="w-mobileWidth mx-auto lg:w-laptopWidth">
+      <!-- Navigation bar start -->
+      <nav>
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="flex-1">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li class="text-xl"><a>Home</a></li>
+                <li class="text-xl"><a>Shop</a></li>
+                <li class="text-xl"><a>News</a></li>
+                <li class="text-xl"><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="font-bold text-xl">Bike Zone</a>
+          </div>
+          <div class="navbar-center hidden lg:flex mr-3">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="">Home</a></li>
+              <li>
+                <a href="">Shop</a>
+              </li>
+              <li><a href="">News</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <a
+              class="bg-navColor text-white text-xl font-bold py-3 px-8 rounded-md inline-block"
+              >Button</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner section start -->
+    </header>
+  </body>
 </html>
