@@ -1,6 +1,6 @@
 # 🚀 Bike Zone
 
-## 🖥️ Responsive Website for Large Scren and 📱 Mobile Phone
+## 🖥️ Responsive Website for Large Screen and 📱 Mobile Phone
 
 ### Technology :
 
